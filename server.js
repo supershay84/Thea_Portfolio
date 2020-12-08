@@ -127,6 +127,18 @@ app.post('/projects', (req,res) => {
 //EDIT
 //____________________
 
+app.get('/projects/:id/edit', (req,res) => {
+    Project.findById(req.params.id, (err, foundProject) => {
+        if(!err){
+            res.render('Edit',{
+                project: foundProject
+            })
+        } else {
+            res.send(err)
+        }
+    })
+});
+
 //____________________
 //SHOW
 //____________________
