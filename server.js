@@ -62,7 +62,7 @@ app.get('/' , (req, res) => {
 
 app.get("/projects", (req,res) => {
     Project.find({}, (err, allProjects) => {
-        iff(!err){
+        if(!err){
             console.log(allProjects);
             res.render("Index", {
                 projects: allProjects
@@ -77,6 +77,10 @@ app.get("/projects", (req,res) => {
 //NEW
 //____________________
 
+app.get('/projects/new', (req,res) => {
+    res.render('New')
+});
+
 //____________________
 //DELETE
 //____________________
@@ -88,6 +92,16 @@ app.get("/projects", (req,res) => {
 //____________________
 //CREATE
 //____________________
+
+app.post('/projects', (req,res) => {
+    Project.create(req.body, (err, newProject) => {
+        if(!err){
+            res.redirect('/projects')
+        } else {
+            res.send(err)
+        }
+    })
+});
 
 //____________________
 //EDIT
