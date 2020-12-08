@@ -85,9 +85,29 @@ app.get('/projects/new', (req,res) => {
 //DELETE
 //____________________
 
+app.delete('/projects/:id', (req,res) => {
+    Project.findByIdAndRemove(req.params.id, (err, foundProject) => {
+        if(!err){
+            res.redirect('/projects')
+        } else {
+            res.send(err)
+        }
+    })
+});
+
 //____________________
 //UPDATE
 //____________________
+
+app.put('/projects/:id', (req,res) => {
+    Project.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err,updatedProject) => {
+        if(!err){
+            res.redirect('/projects')
+        } else {
+            res.send(err)
+        }
+    })
+});
 
 //____________________
 //CREATE
