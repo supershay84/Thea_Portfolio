@@ -9,6 +9,7 @@ const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
+const Project = require("./models/projects");
 //___________________
 //PORT
 //___________________
@@ -58,6 +59,19 @@ app.get('/' , (req, res) => {
 //____________________
 //INDEX
 //____________________
+
+app.get("/projects", (req,res) => {
+    Project.find({}, (err, allProjects) => {
+        iff(!err){
+            console.log(allProjects);
+            res.render("Index", {
+                projects: allProjects
+            })
+        } else {
+            res.send(err)
+        }
+    })
+});
 
 //____________________
 //NEW
