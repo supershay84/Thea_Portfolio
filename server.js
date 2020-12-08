@@ -7,6 +7,7 @@ if(process.env.NODE_ENV === 'development'){
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
+const projects = require('./models/projects');
 const app = express ();
 const db = mongoose.connection;
 const Project = require("./models/projects");
@@ -46,6 +47,14 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+
+projects.create([
+    {
+        name: "Battleship",
+        github: 'https://github.com/supershay84/Project-1',
+        description: 'Classic Battleship Game',
+        image: 'https://res.cloudinary.com/supershay84/image/upload/v1607463126/Screen_Shot_2020-12-08_at_4.26.50_PM_fcgxfs.png'
+}]);
 
 
 //___________________
