@@ -2,7 +2,7 @@ if(process.env.NODE_ENV === 'development'){
     require('dotenv').config()
 } // <== Herokuheroku
 //___________________
-//Dependencies
+//DEPENDECIES
 //___________________
 const express = require('express');
 const methodOverride  = require('method-override');
@@ -10,13 +10,13 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 //___________________
-//Port
+//PORT
 //___________________
 // Allow use of Heroku's port or your own local port, depending on the environment
 const PORT = process.env.PORT || 3000;
 
 //___________________
-//Database
+//DATABASE
 //___________________
 // How to connect to the database either via heroku or locally
 const MONGODB_URI = process.env.MONGODB_URI
@@ -33,7 +33,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 db.on('open' , ()=>{});
 
 //___________________
-//Middleware
+//MIDDLEWARE
 //___________________
 
 //use public folder for static assets
@@ -48,15 +48,43 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 
 //___________________
-// Routes
+// ROUTES
 //___________________
 //localhost:3000 
 app.get('/' , (req, res) => {
   res.send('Hello World!');
 });
 
+//____________________
+//INDEX
+//____________________
+
+//____________________
+//NEW
+//____________________
+
+//____________________
+//DELETE
+//____________________
+
+//____________________
+//UPDATE
+//____________________
+
+//____________________
+//CREATE
+//____________________
+
+//____________________
+//EDIT
+//____________________
+
+//____________________
+//SHOW
+//____________________
+
 //___________________
-//Listener
+//LISTENER
 //___________________
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));
 
