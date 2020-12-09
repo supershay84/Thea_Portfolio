@@ -11,7 +11,8 @@ class New extends React.Component{
                 <form action="/projects" method="POST">
                     Name: <input type="text" name="name"/><br/>
                     Github: <input type="text" name="github"/><br/>
-                    Image: <input type="text" name="image"/><br/>
+                    Img: <input type="text" name="img"/><br/>
+                    Description: <input type="text" name="description"/><br/>
                     <input type="submit" name="" id="createProject" value="Create New Project"/>
                 </form>
             </Layout>

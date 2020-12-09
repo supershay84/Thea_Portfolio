@@ -8,6 +8,8 @@ class Home extends React.Component {
             title="I am Thea"
             stylesheet="/home.css"
             js="/app.js">
+
+
             </Layout>
         )
     }

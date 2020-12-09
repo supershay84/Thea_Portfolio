@@ -13,13 +13,11 @@ class Layout extends React.Component {
                 <h1>{this.props.title}</h1>
                 <nav>
                     <ul>
-                        <li>
-                        <a href={'/'}>Home</a>
+                        <li><a href={'/'}>Home</a>
                         <a href={'/projects'}>Projects</a>
                         <a href={'/projects/about'}>About</a>
                         <a href={'/projects/contact'}>Contact</a>
-                            
-                        </li>
+                         </li>
                     </ul>
                 </nav>
                 {this.props.children}
