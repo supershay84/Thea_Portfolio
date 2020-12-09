@@ -1,13 +1,13 @@
 const React = require('react');
-const Layout = require('./Layouts/Layout.jsx');
+const Layout = require('./Layout.jsx');
 
 class Index extends React.Component{
     render(){
         return(
             <Layout
-            title="I am Thea"
+            title="My Projects"
             stylesheet="/index.css"
-            js="/index.js">
+            js="./app.js">
                 <ul>
                     <form action= {`/projects/new`}>
                         <input type="submit" id= "createProject" value="Create New Project"/>
@@ -25,8 +25,9 @@ class Index extends React.Component{
                         })
                     }
                 </ul>
-
             </Layout>
         )
     }
 }
+
+module.exports = Index;

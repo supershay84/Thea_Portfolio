@@ -7,7 +7,6 @@ if(process.env.NODE_ENV === 'development'){
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
-const projects = require('./models/projects');
 const app = express ();
 const db = mongoose.connection;
 const Project = require("./models/projects");
@@ -37,7 +36,8 @@ db.on('open' , ()=>{});
 //___________________
 //MIDDLEWARE
 //___________________
-
+app.set("view engine", "jsx");
+app.engine("jsx", require("express-react-views").createEngine());
 //use public folder for static assets
 app.use(express.static('public'));
 
@@ -48,13 +48,13 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
-// projects.create([
-//     {
-//         name: "Battleship",
-//         github: 'https://github.com/supershay84/Project-1',
-//         description: 'Classic Battleship Game',
-//         image: 'https://res.cloudinary.com/supershay84/image/upload/v1607463126/Screen_Shot_2020-12-08_at_4.26.50_PM_fcgxfs.png'
-// }]);
+projects.create([
+    {
+        name: "Battleship",
+        github: 'https://github.com/supershay84/Project-1',
+        description: 'Classic Battleship Game',
+        img: 'https://res.cloudinary.com/supershay84/image/upload/v1607463126/Screen_Shot_2020-12-08_at_4.26.50_PM_fcgxfs.png'
+}]);
 
 
 //___________________
@@ -62,8 +62,17 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 //localhost:3000 
 app.get('/' , (req, res) => {
-  res.send('Hello World!');
+  res.render('Home')
 });
+
+app.get('/projects/about', (req,res) => {
+    res.render('About')
+});
+
+app.get('/projects/contact', (req,res) => {
+    res.render('Contact')
+});
+
 
 //____________________
 //INDEX
@@ -72,7 +81,7 @@ app.get('/' , (req, res) => {
 app.get("/projects", (req,res) => {
     Project.find({}, (err, allProjects) => {
         if(!err){
-            console.log(allProjects);
+            // console.log(allProjects);
             res.render("Index", {
                 projects: allProjects
             })

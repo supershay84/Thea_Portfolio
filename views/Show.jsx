@@ -1,12 +1,12 @@
 const React = require('react');
-const Layout = require('./Layouts/Layout.jsx');
+const Layout = require('./Layout.jsx');
 
 class Show extends React.Component {
     render(){
         const project = this.props.project;
         return(
             <Layout
-            title={`${this.props.project.name.toUpperCase()}'s Page`}
+            title={`${this.props.project.name.toUpperCase()} Page`}
             stylesheet="/show.css"
             js="/show.js">
                 <a href={`/projects/${project._id}/edit`}>Edit {project.name}</a><br/>

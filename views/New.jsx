@@ -1,5 +1,5 @@
 const React = require('react');
-const Layout = require('./Layouts/Layout.jsx');
+const Layout = require('./Layout.jsx');
 
 class New extends React.Component{
     render(){
@@ -7,7 +7,7 @@ class New extends React.Component{
             <Layout
             title="New Project Page"
             stylesheet="/new.css"
-            js="/new.js">
+            js="/app.js">
                 <form action="/projects" method="POST">
                     Name: <input type="text" name="name"/><br/>
                     Github: <input type="text" name="github"/><br/>

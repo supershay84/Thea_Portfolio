@@ -1,5 +1,5 @@
 const React = require('react');
-const Layout = require('./Layouts/Layout.jsx');
+const Layout = require('./Layout.jsx');
 
 class Home extends React.Component {
     render(){
@@ -7,14 +7,10 @@ class Home extends React.Component {
             <Layout
             title="I am Thea"
             stylesheet="/home.css"
-            js="/home.js">
-                <nav>
-                    <a href={'/projects'}>Home</a>
-                    <a href={''}>About</a>
-                    <a href={''}>Contact</a>
-                </nav>
-
+            js="/app.js">
             </Layout>
         )
     }
 }
+
+module.exports = Home
