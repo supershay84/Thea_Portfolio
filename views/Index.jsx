@@ -8,15 +8,13 @@ class Index extends React.Component{
             title="My Projects"
             stylesheet="/index.css"
             js="./app.js">
+                <h2>i am Thea</h2>
                 <ul>
-                    <form action= {`/projects/new`}>
-                        <input type="submit" id= "createProject" value="Create New Project"/>
-                    </form><br/>
-                    {
+                     {
                         this.props.projects.map((project,index)=> {
                             return (
                                 <li>
-                                    <a href={`/projects/${project.id}`}>
+                                    <a style= {{color: "#b4b4b4", fontSize: "20px"}} href={`/projects/${project.id}`}>
                                         <img src={project.img}/><br/>
                                         {project.name}
                                     </a><br/>
@@ -24,6 +22,9 @@ class Index extends React.Component{
                             )
                         })
                     }
+                     <form  id= "createProject" action= {`/projects/new`}>
+                        <input style={{backgroundColor:"#0053ff", borderRadius: "12px"}} type="submit"   value="Create New Project"/>
+                    </form><br/>
                 </ul>
             </Layout>
         )

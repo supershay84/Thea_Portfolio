@@ -5,11 +5,13 @@ class Home extends React.Component {
     render(){
         return(
             <Layout
-            title="I am Thea"
+            title=""
             stylesheet="/home.css"
             js="/app.js">
-
-
+                <body>
+                <h1>i am Thea</h1>
+                </body>
+               
             </Layout>
         )
     }

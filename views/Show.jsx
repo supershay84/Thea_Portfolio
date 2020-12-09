@@ -9,6 +9,7 @@ class Show extends React.Component {
             title={`${this.props.project.name.toUpperCase()} Page`}
             stylesheet="/show.css"
             js="/show.js">
+                <h2>i am Thea</h2>
                 <p><a href={project.github}><img src={project.img}/></a></p>
                 <ul>
                     <li>{project.description}</li>
