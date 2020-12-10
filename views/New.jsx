@@ -8,13 +8,14 @@ class New extends React.Component{
             title="New Project Page"
             stylesheet="/new.css"
             js="/app.js">
-                <form action="/projects" method="POST">
-                    Name: <input type="text" name="name"/><br/>
-                    Github: <input type="text" name="github"/><br/>
-                    Img: <input type="text" name="img"/><br/>
-                    Description: <input type="text" name="description"/><br/>
-                    <input type="submit" name="" id="createProject" value="Create New Project"/>
+                <h2>i am Thea</h2>
+                <form id="forms" action="/projects" method="POST">
+                    Name: <input style ={{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="name"/><br/>
+                    Github: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="github"/><br/>
+                    Img: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="img"/><br/>
+                    Description: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="description"/><br/>
                 </form>
+                <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="submit" name="" id="createProject" value="Create New Project"/>
             </Layout>
         )
     }
