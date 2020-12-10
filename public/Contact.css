@@ -38,14 +38,6 @@ h1 {
   color: aliceblue;
 }
 
-li {
-  list-style-type: none;
-  display: flex;
-  justify-content: left;
-  text-align: left;
-  flex-direction: column;
-}
-
 ul {
   display: block;
   padding:10px;
@@ -65,3 +57,19 @@ p{
   align-items: center;
   padding:40px;
 }
+
+.social {
+  list-style-type: none;
+  float: left;
+  padding-top: 550px;
+  
+}
+
+.social a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
