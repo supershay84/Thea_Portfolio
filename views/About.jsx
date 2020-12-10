@@ -9,7 +9,7 @@ class About extends React.Component {
             stylesheet="/about.css"
             js="/app.js">
             <h2>i am Thea</h2>
-            <p style = {{color: "#b4b4b4"}}>Now, this is a story all about how
+            <p style={{color: "#b4b4b4"}}>Now, this is a story all about how
 my life got flipped, turned upside down.
 And I'd like to take a minute,
 just sit right there.
