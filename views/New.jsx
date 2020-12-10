@@ -6,7 +6,7 @@ class New extends React.Component{
         return (
             <Layout
             title="New Project Page"
-            stylesheet="/new.css"
+            stylesheet="/New.css"
             js="/app.js">
                 <h2>i am Thea</h2>
                 <form id="forms" action="/projects" method="POST">

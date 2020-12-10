@@ -6,7 +6,7 @@ class Home extends React.Component {
         return(
             <Layout
             title=""
-            stylesheet="/home.css"
+            stylesheet="/Home.css"
             js="/app.js">
                 <body>
                 <h1>i am Thea</h1>

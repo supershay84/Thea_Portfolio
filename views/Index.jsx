@@ -6,7 +6,7 @@ class Index extends React.Component{
         return(
             <Layout
             title="My Projects"
-            stylesheet="/index.css"
+            stylesheet="/Index.css"
             js="./app.js">
                 <h2>i am Thea</h2>
                 <ul>

@@ -6,7 +6,7 @@ class About extends React.Component {
         return(
             <Layout
             title="About Me"
-            stylesheet="/about.css"
+            stylesheet="/About.css"
             js="/app.js">
             <h2>i am Thea</h2>
             <p style={{color: "#b4b4b4"}}>Now, this is a story all about how

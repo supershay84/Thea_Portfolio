@@ -6,7 +6,7 @@ class Contact extends React.Component {
         return(
             <Layout
             title="Contact Thea"
-            stylesheet="/contact.css"
+            stylesheet="/Contact.css"
             js="/app.js">
                 <h2>i am Thea</h2>
                 <p style={{color: "#b4b4b4"}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus unde ullam sapiente sit atque placeat, exercitationem suscipit porro quaerat quisquam dolor veritatis nisi praesentium repellendus voluptates magnam consequatur neque quas.</p>

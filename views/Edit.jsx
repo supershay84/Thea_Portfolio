@@ -7,7 +7,7 @@ class Edit extends React.Component {
         return(
             <Layout
             title= {`Edit ${this.props.project.name.toUpperCase()}`}
-            stylesheet="/edit.css"
+            stylesheet="/Edit.css"
             js="/app.js">
                 <h2>i am Thea</h2>
                 <form  method="POST" id="forms" action={`/projects/${project._id}?_method=PUT`}>

@@ -7,7 +7,7 @@ class Show extends React.Component {
         return(
             <Layout
             title={`${this.props.project.name.toUpperCase()} Page`}
-            stylesheet="/show.css"
+            stylesheet="/Show.css"
             js="/show.js">
                 <h2>i am Thea</h2>
                 <p><a href={project.github}><img src={project.img}/></a></p>
