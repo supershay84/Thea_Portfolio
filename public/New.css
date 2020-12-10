@@ -47,12 +47,17 @@ h2 {
   font-size: 92px;
 } 
 
-#createProject {
+#createNewProject {
   display: flex;
   justify-content: left;
   align-items: center;
   margin-left: 80px;
 
+}
+
+#createNewProject :hover {
+  color:lightcyan;
+  cursor: grab;
 }
 
 

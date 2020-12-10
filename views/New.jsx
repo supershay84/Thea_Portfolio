@@ -15,7 +15,7 @@ class New extends React.Component{
                     Img: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="img"/><br/>
                     Description: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="description"/><br/>
                 </form>
-                <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="submit" name="" id="createProject" value="Create New Project"/>
+                <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="submit" name="" id="createNewProject" value="Create New Project"/>
             </Layout>
         )
     }

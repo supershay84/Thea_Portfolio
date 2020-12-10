@@ -69,9 +69,19 @@ p{
   padding-left: 50px;
 }
 
+#delete-button :hover {
+  color:lightcyan;
+  cursor: grab;
+}
+
 #editButton {
   display: flex;
   justify-content: left;
   align-items: center;
   padding-left: 60px;
+}
+
+#editButton :hover {
+  color:lightcyan;
+  cursor: grab;
 }
