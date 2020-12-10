@@ -61,18 +61,3 @@ p{
   align-items: center;
   padding:40px;
 }
-
-#update-button {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: 80px;
-
-}
-
-
-#forms {
-  color: aliceblue;
-  list-style-type: none;
-  padding: 40px;
-}  
