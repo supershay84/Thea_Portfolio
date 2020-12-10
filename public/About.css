@@ -1,40 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Homemade+Apple&display=swap');
 body {
-    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-dolly-shot-of-man-hands-typing-text-on-laptop-closeup-fingers-pressing-buttons-on-keyboard-macro-view-of-unknown-man-working-on-laptop-computer-male-hands-using-black-keyboard-on-grey-laptop_htlztv3nl_thumbnail-1080_01.png);
-    background-size: cover;
-    background-repeat: none;
-    };
+  background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vd3bj2jPe/videoblocks-dolly-shot-of-man-hands-typing-text-on-laptop-closeup-fingers-pressing-buttons-on-keyboard-macro-view-of-unknown-man-working-on-laptop-computer-male-hands-using-black-keyboard-on-grey-laptop_htlztv3nl_thumbnail-1080_01.png);
+  background-size: cover;
+  background-repeat: none;
+  };
 
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    list-style-type: none;
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
- 
-  li a:hover {
-    color:lightcyan;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-  h2 {
-    font-family: 'Amatic SC', cursive;
-    font-family: 'Homemade Apple', cursive;
-    float: right;
-    padding: 284px 56px;
-    font-size: 82px;
-  }
+.navigation {
+  list-style-type: none;
+  float: left;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color:lightcyan;
+}
+
+h1 {
+  font-family: cursive;
+  color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  flex-direction: column;
+}
+
+ul {
+  padding:10px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Homemade Apple', cursive;
+  float: right;
+  padding: 284px 56px;
+  font-size: 92px;
+}
+
+p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding:40px;
+}
+
+#update-button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 80px;
+
+}
+
+
+#forms {
+  color: aliceblue;
+  list-style-type: none;
+  padding: 40px;
+}  

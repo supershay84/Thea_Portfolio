@@ -6,16 +6,17 @@ class Edit extends React.Component {
         const project = this.props.project
         return(
             <Layout
-            title= {`Edit ${this.props.project.name.toUpperCase()} Page`}
+            title= {`Edit ${this.props.project.name.toUpperCase()}`}
             stylesheet="/edit.css"
             js="/app.js">
-                <form action={`/projects/${project._id}?_method=PUT`} id="forms" method="POST">
-                    Name: <input type="text" name="name"/><br/>
-                    Github: <input type="text" name="github"/><br/>
-                    Img: <input type="text" name="img"/><br/>
-                    Description: <input type="text" name="description"/><br/>
-                    <input type="submit" id="update-button" name="" value="Update Project"/>
+                <h2>i am Thea</h2>
+                <form  method="POST" id="forms" action={`/projects/${project._id}?_method=PUT`}>
+                    Name: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="name"/><br/>
+                    Github: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="github"/><br/>
+                    Img: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="img"/><br/>
+                    Description: <input style= {{backgroundColor:"#0053ff", borderRadius: "12px"}} type="text" name="description"/><br/>
                 </form>
+                <input id="update-button" style={{backgroundColor:"#0053ff", borderRadius: "12px"}} type="submit" value= {`EDIT ${project.name.toUpperCase()}`}></input>
 
             </Layout>
         )

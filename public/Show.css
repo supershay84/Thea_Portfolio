@@ -30,10 +30,6 @@ nav {
   color:lightcyan;
 }
 
-#createProject {
-  padding: 16px;
-}
-
 h1 {
   font-family: cursive;
   color: aliceblue;
@@ -41,10 +37,14 @@ h1 {
 
 li {
   list-style-type: none;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  flex-direction: column;
 }
 
 ul {
-  padding:40px;
+  padding:10px;
 }
 
 h2 {
@@ -53,4 +53,25 @@ h2 {
   float: right;
   padding: 284px 56px;
   font-size: 92px;
+}
+
+p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding:40px;
+}
+
+#delete-button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+}
+
+#editButton {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
 }
